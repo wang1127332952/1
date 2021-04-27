@@ -1,0 +1,25 @@
+﻿<Window x:Class="Hgtech.Control.Shell.Views.Login.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:prism="http://prismlibrary.com/"
+        xmlns:local="clr-namespace:Hgtech.Control.Shell.Views.Login"
+        xmlns:region="clr-namespace:Hgtech.Control.Infrastructure.Constants;assembly=Hgtech.Control.Infrastructure"
+        mc:Ignorable="d"
+        xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+        Icon="pack://application:,,,/Hgtech.Control.Infrastructure;component/Assets/Photos/Home.png"
+        prism:ViewModelLocator.AutoWireViewModel="True" 
+        ResizeMode="NoResize" 
+        WindowStartupLocation="CenterScreen"
+        Title="LoginWindow" 
+        Height="450" Width="800">
+    <i:Interaction.Triggers>
+        <i:EventTrigger EventName="Loaded">
+            <i:InvokeCommandAction Command="{Binding LoginLoadingCommand}"/>
+        </i:EventTrigger>
+    </i:Interaction.Triggers>
+    <Grid>
+        <ContentControl prism:RegionManager.RegionName="{x:Static region:RegionNames.LoginContentRegion}" Margin="5"/>
+    </Grid>
+</Window>

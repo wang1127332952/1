@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Prism.Unity" Version="8.0.0.1909" />
+	<None Remove="App.config" />
+  </ItemGroup>
+
+  <ItemGroup>
+	 <EmbeddedResource Include="App.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Hgtech.Control.Infrastructure\Hgtech.Control.Infrastructure.csproj" />
+    <ProjectReference Include="..\Hgtech.Control.MedicineModule\Hgtech.Control.MedicineModule.csproj" />
+    <ProjectReference Include="..\Hgtech.Control.PatientModule\Hgtech.Control.PatientModule.csproj" />
+  </ItemGroup>
+
+</Project>
