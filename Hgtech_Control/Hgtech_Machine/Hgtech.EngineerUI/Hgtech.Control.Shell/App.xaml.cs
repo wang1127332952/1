@@ -3,6 +3,8 @@ using Hgtech.Control.Infrastructure.CustomerRegionAdapters;
 using Hgtech.Control.Infrastructure.IServices;
 using Hgtech.Control.Infrastructure.Models;
 using Hgtech.Control.Infrastructure.Services;
+using Hgtech.Control.Shell.ViewModels.Dialogs;
+using Hgtech.Control.Shell.Views.Dialogs;
 using Hgtech.Control.Shell.Views.Login;
 using Prism.Ioc;
 using Prism.Modularity;
@@ -15,8 +17,6 @@ using Unity.Interception;
 using Unity.Interception.ContainerIntegration;
 using Unity.Interception.Interceptors.InstanceInterceptors.InterfaceInterception;
 using Unity.Interception.PolicyInjection;
-using Hgtech.Control.Shell.Views.Dialogs;
-using Hgtech.Control.Shell.ViewModels.Dialogs;
 
 namespace Hgtech.Control.Shell
 {
@@ -31,7 +31,8 @@ namespace Hgtech.Control.Shell
         }
         protected override Window CreateShell()
         {
-             return Container.Resolve<LoginWindow>();
+            //return Container.Resolve<MainWindow>();
+            return Container.Resolve<LoginWindow>();
         }
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
@@ -43,6 +44,9 @@ namespace Hgtech.Control.Shell
             //注册全局命令
             containerRegistry.RegisterSingleton<IApplicationCommands, ApplicationCommands>();
             containerRegistry.RegisterInstance<IFlyoutService>(Container.Resolve<FlyoutService>());
+
+            // 注册复合命令
+            containerRegistry.RegisterSingleton<ICompositeCommands, CompositeCommands>();
 
             //注册导航
             containerRegistry.RegisterForNavigation<LoginMainContent>();
@@ -61,5 +65,6 @@ namespace Hgtech.Control.Shell
         {
             return new DirectoryModuleCatalog() { ModulePath = @".\Modules" };
         }
+
     }
 }

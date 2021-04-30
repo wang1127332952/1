@@ -1,16 +1,8 @@
-﻿using Hgtech.Control.Infrastructure.Constants;
-using Hgtech.Control.Shell.Views.RegionAdapterViews;
-using Prism.Commands;
-using Prism.Ioc;
+﻿using Prism.Commands;
 using Prism.Modularity;
 using Prism.Mvvm;
 using Prism.Regions;
 using Prism.Services.Dialogs;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Hgtech.Control.Shell.ViewModels
 {
@@ -20,10 +12,6 @@ namespace Hgtech.Control.Shell.ViewModels
 
         private IModuleManager _moduleManager;
         private readonly IDialogService _dialogService;
-        private IRegion _paientListRegion;
-        private IRegion _medicineListRegion;
-      //  private PatientList _patientListView;
-      //  private MedicineMainContent _medicineMainContentView;
 
         #endregion
 
@@ -72,16 +60,16 @@ namespace Hgtech.Control.Shell.ViewModels
         #region  Excutes
 
         void ExecuteLoadingCommand()
-        {
+        { 
             //_paientListRegion = RegionMannager.Regions[RegionNames.PatientListRegion];
             //_patientListView = ContainerLocator.Current.Resolve<PatientList>();
            // _paientListRegion.Add(_patientListView);
-            var uniformContentRegion = RegionMannager.Regions["UniformContentRegion"];
-            var regionStackPanel = ContainerLocator.Current.Resolve<RegionAdapterStackPanel>();
-            uniformContentRegion.Add(regionStackPanel);
+            //var uniformContentRegion = RegionMannager.Regions["UniformContentRegion"];
+            //var regionStackPanel = ContainerLocator.Current.Resolve<RegionAdapterStackPanel>();
+           // uniformContentRegion.Add(regionStackPanel);
             //var regionAdapterView2 = ContainerLocator.Current.Resolve<RegionAdapterView2>();
            // uniformContentRegion.Add(regionAdapterView2);
-            _medicineListRegion = RegionMannager.Regions[RegionNames.MedicineMainContentRegion];
+           // _medicineListRegion = RegionMannager.Regions[RegionNames.MedicineMainContentRegion];
         }
 
         void ExecuteDeactiveMedicineListCommand()

@@ -8,7 +8,8 @@
              xmlns:conveter="clr-namespace:Hgtech.Control.Infrastructure.Converters;assembly=Hgtech.Control.Infrastructure"
              xmlns:prism="http://prismlibrary.com/"
              xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
-             d:DesignHeight="600" d:DesignWidth="400" prism:ViewModelLocator.AutoWireViewModel="True">
+             d:DesignHeight="600" d:DesignWidth="400" 
+             prism:ViewModelLocator.AutoWireViewModel="True">
     <UserControl.Resources>
         <conveter:BoolToVisibilityConverter x:Key="boolToVisibilityConverter"/>
     </UserControl.Resources>

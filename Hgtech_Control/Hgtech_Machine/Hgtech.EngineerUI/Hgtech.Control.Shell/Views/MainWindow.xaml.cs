@@ -2,30 +2,48 @@
 using MahApps.Metro.Controls;
 using Prism.Ioc;
 using Prism.Regions;
+using System;
 using System.Windows;
+using System.Windows.Input;
 
 namespace Hgtech.Control.Shell.Views
 {
     /// <summary>
     /// MainWindow.xaml 的交互逻辑
     /// </summary>
-    public partial class MainWindow : MetroWindow
+    public partial class MainWindow : Window
     {
         public MainWindow()
         {
             InitializeComponent();
-            var regionManager = ContainerLocator.Current.Resolve<IRegionManager>();
-            if (regionManager != null)
-            {
-                SetRegionManager(regionManager, this.flyoutsControlRegion, RegionNames.FlyoutRegion);
-                SetRegionManager(regionManager, this.rightWindowCommandsRegion, RegionNames.ShowSearchPatientRegion);
-            }
         }
 
-        void SetRegionManager(IRegionManager regionManager, DependencyObject regionTarget, string regionName)
+        private void Grid_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            RegionManager.SetRegionName(regionTarget, regionName);
-            RegionManager.SetRegionManager(regionTarget, regionManager);
+            //进行拖放移动
+            this.DragMove();
+        }
+
+        private void closeBtn_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void minBtn_Click(object sender, RoutedEventArgs e)
+        {
+            this.WindowState = WindowState.Minimized;
+        }
+
+        private void bgBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void maxBtn_Click(object sender, RoutedEventArgs e)
+        {
+            this.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+            this.WindowState = this.WindowState == WindowState.Maximized ? WindowState.Normal : WindowState.Maximized;
+            this.maxMinIcon.Text = this.WindowState == WindowState.Maximized ? "\xe62b" : "\xe65b";
         }
     }
 }

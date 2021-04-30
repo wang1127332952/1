@@ -91,6 +91,11 @@ namespace Hgtech.Control.Shell.ViewModels.Login
 
         #endregion
 
+        /// <summary>
+        /// 登录主页面
+        /// </summary>
+        /// <param name="regionManager"></param>
+        /// <param name="dialogService"></param>
         public LoginMainContentViewModel(IRegionManager regionManager, IDialogService dialogService)
         {
             _regionManager = regionManager;
@@ -102,8 +107,6 @@ namespace Hgtech.Control.Shell.ViewModels.Login
             if (navigatePath != null)
                 _regionManager.RequestNavigate(RegionNames.LoginContentRegion, navigatePath);
         }
-
-
 
         private bool CanExecuteGoForwardCommand(PasswordBox passwordBox)
         {

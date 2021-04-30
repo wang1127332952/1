@@ -10,6 +10,33 @@
 
   <ItemGroup>
     <None Remove="Assets\Fonts\iconfont.ttf" />
+    <None Remove="Assets\Images\bg\bg.jpg" />
+    <None Remove="Assets\Images\bg\bg001.jpg" />
+    <None Remove="Assets\Images\bg\bg002.jpg" />
+    <None Remove="Assets\Images\bg\bg003.jpg" />
+    <None Remove="Assets\Images\bg\bg10.jpg" />
+    <None Remove="Assets\Images\bg\bg11.jpg" />
+    <None Remove="Assets\Images\bg\bg12.jpg" />
+    <None Remove="Assets\Images\bg\bg13.jpg" />
+    <None Remove="Assets\Images\bg\bg2.jpg" />
+    <None Remove="Assets\Images\bg\bg4.jpg" />
+    <None Remove="Assets\Images\bg\bg5.jpg" />
+    <None Remove="Assets\Images\bg\bg8.jpg" />
+    <None Remove="Assets\Images\bg\bg9.jpg" />
+    <None Remove="Assets\Images\bg\blue.jpg" />
+    <None Remove="Assets\Images\bg\chrome.jpg" />
+    <None Remove="Assets\Images\bg\city.jpg" />
+    <None Remove="Assets\Images\bg\cloth.png" />
+    <None Remove="Assets\Images\bg\greenish.jpg" />
+    <None Remove="Assets\Images\bg\kiwi.jpg" />
+    <None Remove="Assets\Images\bg\lights.jpg" />
+    <None Remove="Assets\Images\bg\night.jpg" />
+    <None Remove="Assets\Images\bg\ocean.jpg" />
+    <None Remove="Assets\Images\bg\sunny.jpg" />
+    <None Remove="Assets\Images\bg\sunset.jpg" />
+    <None Remove="Assets\Images\bg\tectile.png" />
+    <None Remove="Assets\Images\bg\violate.jpg" />
+    <None Remove="Assets\Images\bg\yellow.jpg" />
     <None Remove="Assets\Photos\alter.png" />
     <None Remove="Assets\Photos\Home.png" />
     <None Remove="Assets\Photos\success.png" />
@@ -22,6 +49,87 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Assets\Fonts\iconfont.ttf" />
+    <Resource Include="Assets\Images\bg\bg.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\bg\bg001.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\bg\bg002.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\bg\bg003.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\bg\bg10.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\bg\bg11.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\bg\bg12.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\bg\bg13.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\bg\bg2.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\bg\bg4.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\bg\bg5.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\bg\bg8.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\bg\bg9.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\bg\blue.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\bg\chrome.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\bg\city.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\bg\cloth.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\bg\greenish.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\bg\kiwi.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\bg\lights.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\bg\night.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\bg\ocean.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\bg\sunny.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\bg\sunset.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\bg\tectile.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\bg\violate.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\bg\yellow.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Assets\Photos\alter.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>

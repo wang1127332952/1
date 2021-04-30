@@ -1,0 +1,57 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <OutputType>Library</OutputType>
+	  <TargetFramework>net5.0-windows</TargetFramework>
+	  <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Update="Controls\FiconButton.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Controls\MultiComboBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Style\Colors.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Style\Global.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Style\Style.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Style\Themes\FIcon.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Style\Themes\ListBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Style\Themes\LoopProcessBar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Style\Themes\ProgressBar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Style\Themes\ScrollViewer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Style\Themes\Share.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Style\Themes\TextBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Style\Themes\ToggleButton.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Style\Themes\TreeView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Style\Themes\Window.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+  </ItemGroup>
+
+</Project>

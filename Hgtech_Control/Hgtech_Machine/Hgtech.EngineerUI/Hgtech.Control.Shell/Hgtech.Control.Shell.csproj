@@ -19,8 +19,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Hgtech.Control.Infrastructure\Hgtech.Control.Infrastructure.csproj" />
-    <ProjectReference Include="..\Hgtech.Control.MedicineModule\Hgtech.Control.MedicineModule.csproj" />
-    <ProjectReference Include="..\Hgtech.Control.PatientModule\Hgtech.Control.PatientModule.csproj" />
+    <ProjectReference Include="..\Hgtech.Control.MainModule\Hgtech.Control.MainModule.csproj" />
+    <ProjectReference Include="..\Hgtech.Control.SysModule\Hgtech.Control.SysModule.csproj" />
   </ItemGroup>
 
 </Project>
